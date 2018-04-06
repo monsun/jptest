@@ -23,8 +23,8 @@ public class VolumeWeightedStockPriceCalculatorTest {
     @DataProvider
     public static Object[][] volumeWeightedDataProvider() {
         return new Object[][] {
-                {Arrays.asList(new StockTransaction(new BigInteger("100"), new BigInteger("300"), true, new DateTime()), new StockTransaction(new BigInteger("400"), new BigInteger("700"), true, new DateTime())),  new BigDecimal("310") },
-                {Arrays.asList(new StockTransaction(new BigInteger("100"), new BigInteger("300"), true, new DateTime())),  new BigDecimal("100") }
+                {Arrays.asList(new StockTransaction(new BigInteger("100"), new BigInteger("300"), true, new DateTime()), new StockTransaction(new BigInteger("400"), new BigInteger("700"), true, new DateTime())),  new BigDecimal("310.0000") },
+                {Arrays.asList(new StockTransaction(new BigInteger("100"), new BigInteger("300"), true, new DateTime())),  new BigDecimal("100.0000") }
         };
     }
 

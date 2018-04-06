@@ -1,6 +1,10 @@
 
 ## Usage
 
+```
+java -jar target/jptest-1.0-SNAPSHOT.jar eu.jedrzej.jptest.input.Main
+```
+
 #### Dividend yield
 Example for calculation of dividend yield
 ```
@@ -35,4 +39,9 @@ This example calculates GBCE stocks index
 ```
 $>index
 BGCE index: 122474
+```
+
+### Exit
+```
+CTRL + D
 ```
