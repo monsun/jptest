@@ -1,9 +1,16 @@
+# Super Simple stocks 
+Example app calculating example stocks value written in Java. 
+
+Pardon the short description, I hope examples are good enough to understand how the tool works for now.
 
 ## Usage
+Run the program to start REPL mode.
 
 ```
 java -jar target/jptest-1.0-SNAPSHOT.jar eu.jedrzej.jptest.input.Main
 ```
+
+This will allow you to perform the listed operations. Stocks are defined in ```src\main\resources\stocks.json``` file.
 
 #### Dividend yield
 Example for calculation of dividend yield

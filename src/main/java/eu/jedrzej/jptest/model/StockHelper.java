@@ -21,12 +21,13 @@ import java.util.List;
 public class StockHelper {
 
     private static final int TRANSACTIONS_AGE_IN_MINUTES = 15;
+    public static final String STOCKS_JSON = "stocks.json";
 
     private static List<StockTransaction> transactions = new LinkedList<>();
 
     public static AbstractStock getStockBySymbol(String stockSymbol) {
         try {
-            InputStream is = StockHelper.class.getClassLoader().getResourceAsStream("stocks.json");
+            InputStream is = StockHelper.class.getClassLoader().getResourceAsStream(STOCKS_JSON);
             JSONParser parser = new JSONParser();
             JSONObject jsonObject = (JSONObject) parser.parse(new InputStreamReader(is));
             JSONArray stocks = (JSONArray) jsonObject.get("stocks");

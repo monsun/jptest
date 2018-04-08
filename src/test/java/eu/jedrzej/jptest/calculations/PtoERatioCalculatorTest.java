@@ -23,7 +23,7 @@ public class PtoERatioCalculatorTest {
     public static Object[][] PtoEDataProvider() {
         return new Object[][] {
                 {new CommonStock("ZZZ", new BigInteger("100"), new BigInteger("1000")), new BigInteger("1000"), new BigDecimal("10.0000") },
-                {new PreferredStock("abc", new BigInteger("200"), new BigInteger("10000"), new BigDecimal("5")), new BigInteger("1000") , new BigDecimal("200.0000")}
+                {new PreferredStock("abc", new BigInteger("200"), new BigInteger("10000"), new BigDecimal("5")), new BigInteger("1000"), new BigDecimal("0.4000")}
         };
     }
 

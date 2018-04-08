@@ -7,6 +7,9 @@ import java.math.BigInteger;
 import java.util.Collection;
 
 /**
+ * Volume weighted stock price:
+ * (sum of each stocks transaction's trade price * quantity) divided by (sum of each stocks transaction's quantity)
+ *
  * Created by JKalinowski on 2018-03-23.
  */
 public class VolumeWeightedStockPriceCalculator {
@@ -19,6 +22,6 @@ public class VolumeWeightedStockPriceCalculator {
             sumOfQuantities = sumOfQuantities.add(transaction.getQuantity());
         }
 
-        return new BigDecimal(sumOfProducts).divide(new BigDecimal(sumOfQuantities), CalculationConstants.SCALE, CalculationConstants.roundingMode);
+        return new BigDecimal(sumOfProducts).divide(new BigDecimal(sumOfQuantities), CalculationConstants.SCALE, CalculationConstants.ROUNDING_MODE);
     }
 }

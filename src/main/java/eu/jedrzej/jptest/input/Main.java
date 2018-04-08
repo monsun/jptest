@@ -99,7 +99,7 @@ public class Main {
 
                     case "gbce":
                     case "index": {
-                        BigInteger index = GeometricalMeanCalculator.geometricalMean(StockHelper.getAllStocks());
+                        BigDecimal index = GeometricalMeanCalculator.geometricalMean(StockHelper.getAllStocks());
                         System.out.println("BGCE index: " + index);
                         break;
                     }

@@ -6,6 +6,10 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
+ * Dividend yield calculation:
+ * For common stocks: last_dividend / market_price
+ * For preferred stocks: (fixed_dividend * par_value)/market_price
+ *
  * Created by JKalinowski on 2018-03-22.
  */
 public class DividendYieldCalculator {

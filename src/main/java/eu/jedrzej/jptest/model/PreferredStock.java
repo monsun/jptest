@@ -29,6 +29,8 @@ public class PreferredStock extends AbstractStock {
 
     @Override
     public BigInteger getDividendValueForCalculations() {
-        return fixedDividend.multiply(new BigDecimal(getParValue())).multiply(this.fixedDividend).multiply(new BigDecimal("1").divide(new BigDecimal("100"), CalculationConstants.SCALE, CalculationConstants.roundingMode)).toBigInteger();
+        return fixedDividend.multiply(new BigDecimal(getParValue())).multiply(this.fixedDividend).multiply(
+                new BigDecimal("1").divide(new BigDecimal("100"), CalculationConstants.SCALE,
+                        CalculationConstants.ROUNDING_MODE)).toBigInteger();
     }
 }
